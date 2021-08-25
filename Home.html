@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Bish-Bosh</title>
+    <link rel ="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1> Bish-Bosh 2.0</h1>
+    <p>Bish-bosh listar tal mellan 1 och det du väljer nedan()</p>
+    <p>om talet är jämnt delbart med ditt valda bish-tal() visas <span class="red">bish</span> istället för talet</p>
+    <p>om talet är jämnt delbart med ditt valda bosh-tal() visas <span class="blue">bosh</span>istället för talet</p>
+    <p>om talet är jämnt delbart med båda dina tal visas bish-bosh</p>
+
+    
+    <form>  
+        <label for="numberss">Antal nummer:</label>
+        <input type="range" id="numbers2" name="numberss" min="1" max="200"  oninput="changenumber('numbers2','lnumber'); bishbosh();" />
+        <label id="lnumber"></label><br>
+
+        <label for="boshh">Bosh-nummer:</label>
+        <input type="range" id="bosh2" name="boshh"  min="1" max="200"  oninput="changenumber('bosh2','lbosh'); bishbosh();" />
+        <label id="lbosh"></label><br>
+
+        <label for="bishh">Bish-nummer:</label>
+        <input type="range" id="bish2" name="bishh" min="1" max="200"  oninput="changenumber('bish2','lbish'); bishbosh();"/>
+        <label id="lbish"></label><br>
+    </form>
+
+    <ul id="bobili">
+
+    </ul>
+    
+
+    <!-- <div class="finnish">
+        <button onclick="bishbosh()">resultat</button>
+
+    </div>
+    <br>
+    <div class="result">
+        <p id="pop"></p>
+
+    </div> -->
+
+    <script src="Script.js">
+       
+    </script>
+</body>
+</html>

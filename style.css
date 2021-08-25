@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(170, 162, 162);
+}
+.pop{
+    background-color: white;
+    
+}
+.inputnumbers{
+    background-color: hotpink;
+}
+.red{
+    color:red;
+}
+.blue{
+    color: blue;
+}
+.bobili{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+}
+.result{
+    background-color: indigo;
+    align-self: flex-start;
+}
